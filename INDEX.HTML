@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shark Digital Store</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- POPUP: Surfshark Sale -->
+  <div class="popup-overlay" id="salePopup">
+    <div class="popup-card">
+      <button class="popup-close" id="popupClose" aria-label="Close popup">
+        &times;
+      </button>
+      <img src="surfshark.jpg" alt="Surfshark VPN" class="popup-logo" />
+      <h2>Sale on Surfshark VPN</h2>
+      <p>
+        Get ultra-secure <strong>Surfshark VPN</strong> at a special
+        <strong>Shark Digital Store</strong> price.
+      </p>
+      <a
+        href="https://wa.me/923178442304?text=Hello+I+want+to+buy+surfshark"
+        target="_blank"
+        class="btn-primary popup-btn"
+      >
+        Get Now on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Background bubbles -->
+  <div class="bg-bubbles">
+    <span class="bubble bubble-1"></span>
+    <span class="bubble bubble-2"></span>
+    <span class="bubble bubble-3"></span>
+    <span class="bubble bubble-4"></span>
+  </div>
+
+  <!-- Whole page wrapper (for blur) -->
+  <div class="page-wrapper" id="pageWrapper">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo-wrap">
+          <img src="logo.png" alt="Shark Digital Store Logo" class="logo-img" />
+          <span class="logo-text">Shark Digital Store</span>
+        </a>
+
+        <nav class="main-nav">
+          <a href="#home">Home</a>
+          <a href="#offers">Offers</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#offers">Offers</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home" data-aos="fade-up" data-aos-delay="50">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="hero-subtitle">Trusted by 2,000+ Clients</p>
+            <h1 class="hero-title">
+              Welcome to <span>Shark Digital</span>
+            </h1>
+            <p class="hero-text">
+              Your one-stop digital store for premium VPNs, streaming
+              subscriptions and AI tools at pocket-friendly prices.
+            </p>
+            <a
+              href="https://wa.me/923178442304?text=Hello+I+want+to+buy+subscriptions"
+              target="_blank"
+              class="btn-primary hero-btn"
+            >
+              GET STARTED
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFERS -->
+      <section class="section offers" id="offers">
+        <div class="container">
+          <h2 class="section-title" data-aos="zoom-out-down">
+            Limited Time Offers
+          </h2>
+          <div class="offers-grid">
+            <article class="offer-card offer-vpn" data-aos="flip-left">
+              <div class="offer-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3>PREMIUM VPNs</h3>
+              <p class="offer-main">
+                UP TO <span>80% OFF</span>
+              </p>
+              <p class="offer-desc">
+                100% secure, fast &amp; private VPN connections with full
+                warranty on every plan.
+              </p>
+            </article>
+
+            <article
+              class="offer-card offer-stream"
+              data-aos="flip-up"
+              data-aos-delay="60"
+            >
+              <div class="offer-icon">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <h3>NETFLIX + PRIME</h3>
+              <p class="offer-main">
+                <span>COMBO DEAL</span>
+              </p>
+              <p class="offer-desc">
+                Smooth UHD access to Netflix &amp; Prime Video on your
+                favourite devices.
+              </p>
+            </article>
+
+            <article
+              class="offer-card offer-ai"
+              data-aos="flip-right"
+              data-aos-delay="120"
+            >
+              <div class="offer-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <h3>PREMIUM AI TOOLS</h3>
+              <p class="offer-main">
+                UP TO <span>50% OFF</span>
+              </p>
+              <p class="offer-desc">
+                ChatGPT, Canva, CapCut and more — perfect for students,
+                creators and businesses.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR APPS -->
+      <section class="section popular-apps">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
+            Popular Apps &amp; Subscriptions
+          </h2>
+          <div class="apps-grid" data-aos="zoom-in-up" data-aos-delay="80">
+            <div class="app-card">
+              <img src="chatgpt.jpg" alt="ChatGPT" />
+              <p>ChatGPT / AI</p>
+            </div>
+            <div class="app-card">
+              <img src="surfshark.jpg" alt="Surfshark VPN" />
+              <p>Surfshark VPN</p>
+            </div>
+            <div class="app-card">
+              <img src="capcut.jpg" alt="CapCut Pro" />
+              <p>CapCut / Editing</p>
+            </div>
+            <div class="app-card">
+              <img src="canva.jpg" alt="Canva Pro" />
+              <p>Canva Pro</p>
+            </div>
+            <div class="app-card">
+              <img src="netflix.jpg" alt="Netflix" />
+              <p>Netflix</p>
+            </div>
+            <div class="app-card">
+              <img src="iptv.jpg" alt="IPTV" />
+              <p>IPTV &amp; Live TV</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <h2 class="section-title" data-aos="zoom-out-up">
+            Some Reviews
+            <span class="section-subtitle">
+              Excellence is our service standard.
+            </span>
+          </h2>
+          <div class="reviews-grid">
+            <article class="review-card" data-aos="zoom-in" data-aos-delay="0">
+              <div class="review-header">
+                <div class="avatar avatar-1"></div>
+                <div>
+                  <p class="review-name">Ahmed</p>
+                  <p class="review-tag">Netflix + VPN Combo</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Super fast activation and very friendly support. Got my
+                Netflix and VPN within minutes.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article
+              class="review-card"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+            >
+              <div class="review-header">
+                <div class="avatar avatar-2"></div>
+                <div>
+                  <p class="review-name">Zain</p>
+                  <p class="review-tag">IPTV &amp; Streaming</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Best pricing in town. I moved all my subscriptions to Shark
+                Digital Store.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article
+              class="review-card"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="review-header">
+                <div class="avatar avatar-3"></div>
+                <div>
+                  <p class="review-name">Fauz</p>
+                  <p class="review-tag">AI &amp; Editing Tools</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Got ChatGPT, Canva Pro and CapCut from them. Everything
+                working 10/10.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article
+              class="review-card"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <div class="review-header">
+                <div class="avatar avatar-4"></div>
+                <div>
+                  <p class="review-name">Hassan</p>
+                  <p class="review-tag">Family Plans</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Very honest dealing and proper warranty. Highly recommended for
+                students.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article
+              class="review-card"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="review-header">
+                <div class="avatar avatar-5"></div>
+                <div>
+                  <p class="review-name">Maria</p>
+                  <p class="review-tag">OTT + VPN</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “I’ve ordered multiple times for family and friends. Service is
+                always smooth.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <!-- FAKE REVIEW FORM CARD -->
+            <article
+              class="review-card review-form-card"
+              data-aos="zoom-in"
+              data-aos-delay="260"
+            >
+              <button class="review-form-toggle" type="button">
+                <span>Write your own review</span>
+                <i class="fa-solid fa-pen"></i>
+              </button>
+              <form class="review-form">
+                <label class="review-label">Rating</label>
+                <div class="stars-input">
+                  <button type="button" data-value="1">★</button>
+                  <button type="button" data-value="2">★</button>
+                  <button type="button" data-value="3">★</button>
+                  <button type="button" data-value="4">★</button>
+                  <button type="button" data-value="5" class="active">★</button>
+                  <input type="hidden" name="rating" value="5" />
+                </div>
+
+                <label class="review-label" for="reviewName">Your name</label>
+                <input
+                  id="reviewName"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+
+                <label class="review-label" for="reviewText">Your review</label>
+                <textarea
+                  id="reviewText"
+                  name="review"
+                  rows="3"
+                  placeholder="Write your review..."
+                  required
+                ></textarea>
+
+                <button type="submit" class="btn-primary btn-small">
+                  Submit
+                </button>
+                <p class="review-form-message"></p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq">
+        <div class="container">
+          <h2 class="section-title" data-aos="zoom-out-down">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list" data-aos="fade-up" data-aos-delay="90">
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What is Shark Digital Store?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Shark Digital Store is a trusted online store for digital
+                  subscriptions like streaming apps, VPNs and AI tools with
+                  instant activation and clear warranty.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What types of tools do you offer?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We provide premium VPNs, OTT apps, IPTV, ChatGPT, Canva Pro,
+                  editing software and many more digital services under one
+                  roof.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What payment methods do you accept?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We accept multiple local transfer options within Pakistan.
+                  Just message us on WhatsApp for the latest payment details.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What is your refund policy?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  If we are unable to activate your subscription or provide what
+                  was promised, you receive a quick refund or alternate solution
+                  as per our policy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER / CONTACT -->
+    <footer class="footer" id="contact">
+      <div class="container footer-inner" data-aos="fade-up">
+        <h2 class="footer-title">Contact Us Now!</h2>
+        <div class="footer-buttons">
+          <a
+            href="https://wa.me/923178442304"
+            target="_blank"
+            class="footer-btn whatsapp"
+          >
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a
+            href="https://www.instagram.com/shark_digital_store?igsh=d3EyYzVydmVlbHQ1"
+            target="_blank"
+            class="footer-btn instagram"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/share/1BsETAc1zm/"
+            target="_blank"
+            class="footer-btn facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+          </a>
+        </div>
+
+        <div class="footer-buttons footer-buttons-wide">
+          <a
+            href="https://whatsapp.com/channel/0029VbBWS4CDp2Q8ZVdvtb1V"
+            target="_blank"
+            class="footer-btn channel"
+          >
+            Join our WhatsApp Channel for latest updates
+          </a>
+        </div>
+
+        <p class="footer-contact">
+          Contact: <strong>+92 317 8442304</strong>
+        </p>
+        <p class="footer-copy">ALL RIGHTS RESERVED BY SHARK DIGITAL STORE</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Floating WhatsApp button -->
+  <a
+    href="https://wa.me/923178442304"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
