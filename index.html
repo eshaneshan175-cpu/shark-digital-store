@@ -5,13 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shark Digital Store</title>
 
-  <script>
-    (function(w,d,s,r,n){w.TrustpilotObject=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};
-        a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
-        f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
-        tp('register', 'IVjqUJanhmQacC1x');
-  </script>
-
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -19,8 +13,10 @@
     rel="stylesheet"
   />
 
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -32,6 +28,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- POPUP: Surfshark Sale -->
   <div class="popup-overlay" id="salePopup">
     <div class="popup-card">
       <button class="popup-close" id="popupClose" aria-label="Close popup">
@@ -53,6 +50,7 @@
     </div>
   </div>
 
+  <!-- Background bubbles -->
   <div class="bg-bubbles">
     <span class="bubble bubble-1"></span>
     <span class="bubble bubble-2"></span>
@@ -60,7 +58,9 @@
     <span class="bubble bubble-4"></span>
   </div>
 
+  <!-- Whole page wrapper (for blur) -->
   <div class="page-wrapper" id="pageWrapper">
+    <!-- HEADER -->
     <header class="site-header">
       <div class="container header-inner">
         <a href="#home" class="logo-wrap">
@@ -81,6 +81,7 @@
         </button>
       </div>
 
+      <!-- Mobile Nav -->
       <nav class="mobile-nav" id="mobileNav">
         <a href="#home">Home</a>
         <a href="#offers">Offers</a>
@@ -91,6 +92,7 @@
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero" id="home" data-aos="fade-up" data-aos-delay="50">
         <div class="container hero-inner">
           <div class="hero-content">
@@ -113,6 +115,7 @@
         </div>
       </section>
 
+      <!-- OFFERS -->
       <section class="section offers" id="offers">
         <div class="container">
           <h2 class="section-title" data-aos="zoom-out-down">
@@ -172,6 +175,7 @@
         </div>
       </section>
 
+      <!-- POPULAR APPS -->
       <section class="section popular-apps">
         <div class="container">
           <h2
@@ -210,6 +214,7 @@
         </div>
       </section>
 
+      <!-- REVIEWS -->
       <section class="section reviews" id="reviews">
         <div class="container">
           <h2 class="section-title" data-aos="zoom-out-up">
@@ -232,7 +237,9 @@
                 Netflix and VPN within minutes.”
               </p>
               <div class="review-stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
               </div>
             </article>
 
@@ -253,7 +260,9 @@
                 Digital Store.”
               </p>
               <div class="review-stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
               </div>
             </article>
 
@@ -274,10 +283,59 @@
                 working 10/10.”
               </p>
               <div class="review-stars">
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
               </div>
             </article>
-            
+
+            <article
+              class="review-card"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <div class="review-header">
+                <div class="avatar avatar-4"></div>
+                <div>
+                  <p class="review-name">Hassan</p>
+                  <p class="review-tag">Family Plans</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Very honest dealing and proper warranty. Highly recommended for
+                students.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <article
+              class="review-card"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="review-header">
+                <div class="avatar avatar-5"></div>
+                <div>
+                  <p class="review-name">Maria</p>
+                  <p class="review-tag">OTT + VPN</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “I’ve ordered multiple times for family and friends. Service is
+                always smooth.”
+              </p>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <!-- FAKE REVIEW FORM CARD -->
             <article
               class="review-card review-form-card"
               data-aos="zoom-in"
@@ -299,18 +357,34 @@
                 </div>
 
                 <label class="review-label" for="reviewName">Your name</label>
-                <input id="reviewName" type="text" name="name" placeholder="Enter your name" required />
+                <input
+                  id="reviewName"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
 
                 <label class="review-label" for="reviewText">Your review</label>
-                <textarea id="reviewText" name="review" rows="3" placeholder="Write your review..." required></textarea>
+                <textarea
+                  id="reviewText"
+                  name="review"
+                  rows="3"
+                  placeholder="Write your review..."
+                  required
+                ></textarea>
 
-                <button type="submit" class="btn-primary btn-small">Submit</button>
+                <button type="submit" class="btn-primary btn-small">
+                  Submit
+                </button>
+                <p class="review-form-message"></p>
               </form>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- FAQ -->
       <section class="section faq" id="faq">
         <div class="container">
           <h2 class="section-title" data-aos="zoom-out-down">
@@ -323,7 +397,52 @@
                 <i class="fa-solid fa-plus"></i>
               </button>
               <div class="faq-answer">
-                <p>Shark Digital Store is a trusted online store for premium digital subscriptions since 2023.</p>
+                <p>
+                  Shark Digital Store is a trusted online store for digital
+                  subscriptions like streaming apps, VPNs and AI tools with
+                  instant activation and clear warranty.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What types of tools do you offer?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We provide premium VPNs, OTT apps, IPTV, ChatGPT, Canva Pro,
+                  editing software and many more digital services under one
+                  roof.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What payment methods do you accept?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We accept multiple local transfer options within Pakistan.
+                  Just message us on WhatsApp for the latest payment details.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What is your refund policy?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  If we are unable to activate your subscription or provide what
+                  was promised, you receive a quick refund or alternate solution
+                  as per our policy.
+                </p>
               </div>
             </div>
           </div>
@@ -331,28 +450,65 @@
       </section>
     </main>
 
+    <!-- FOOTER / CONTACT -->
     <footer class="footer" id="contact">
       <div class="container footer-inner" data-aos="fade-up">
         <h2 class="footer-title">Contact Us Now!</h2>
         <div class="footer-buttons">
-          <a href="https://wa.me/923178442304" target="_blank" class="footer-btn whatsapp">
+          <a
+            href="https://wa.me/923178442304"
+            target="_blank"
+            class="footer-btn whatsapp"
+          >
             <i class="fa-brands fa-whatsapp"></i> WhatsApp
           </a>
-          <a href="https://www.instagram.com/shark_digital_store" target="_blank" class="footer-btn instagram">
+          <a
+            href="https://www.instagram.com/shark_digital_store?igsh=d3EyYzVydmVlbHQ1"
+            target="_blank"
+            class="footer-btn instagram"
+          >
             <i class="fa-brands fa-instagram"></i> Instagram
           </a>
+          <a
+            href="https://www.facebook.com/share/1BsETAc1zm/"
+            target="_blank"
+            class="footer-btn facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+          </a>
         </div>
-        <p class="footer-contact">Contact: <strong>+92 317 8442304</strong></p>
-        <p class="footer-copy">© 2025 SHARK DIGITAL STORE. ALL RIGHTS RESERVED.</p>
+
+        <div class="footer-buttons footer-buttons-wide">
+          <a
+            href="https://whatsapp.com/channel/0029VbBWS4CDp2Q8ZVdvtb1V"
+            target="_blank"
+            class="footer-btn channel"
+          >
+            Join our WhatsApp Channel for latest updates
+          </a>
+        </div>
+
+        <p class="footer-contact">
+          Contact: <strong>+92 317 8442304</strong>
+        </p>
+        <p class="footer-copy">ALL RIGHTS RESERVED BY SHARK DIGITAL STORE</p>
       </div>
     </footer>
   </div>
 
+  <!-- Floating WhatsApp button -->
+  <a
+    href="https://wa.me/923178442304"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <!-- Main JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
